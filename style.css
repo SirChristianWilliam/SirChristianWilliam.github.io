@@ -1,0 +1,540 @@
+* {box-sizing:border-box;}
+body { 
+  font-size:100%;
+  color:rgba(32,32,32,1);
+   
+  
+  
+}
+:root {}
+::selection {
+  background-color:black;
+  color:yellow;
+}
+h2 {padding:10px;}
+
+
+.headcontainer {
+  border:1px solid black;
+   width:75%;
+  height:202px;
+  margin:auto;
+  border-bottom:none;
+  box-shadow:0px 0px 135px lightblue;
+  
+  
+}
+.headerpicture {
+  width:25%;
+  float:left;
+   height:200px;
+  border-right:3px dashed rgba(55,55,55,1);
+  background-color:lightgrey;
+  position:relative;  box-shadow:0px 0px 3px black inset;
+  
+  
+}
+
+.stick {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:0px 0px 1px black;
+}
+
+.body {
+  width:100px;
+  border:1px solid black;
+  transform:rotate(90deg) translate(0px, 50px);
+    background:black;
+
+ }
+.leftarm {
+  width:45px;
+  border:1px solid black;
+  transform:rotate(130deg) translate(21px, 30px);
+    background:black;
+
+}
+ 
+.leftleg {
+  width:50px;
+  border:1px solid black;
+  transform:rotate(110deg) translate(79px,7px);  
+    background:black;
+
+}
+.rightleg {
+  width:50px;
+  border:1px solid black;
+  transform:rotate(-110deg) translate(-63px,-40px); 
+  background:black;
+}
+.head {
+  position:relative;
+  width:50px;
+  height:40px;
+  border:2px solid black;
+  margin:auto;
+  border-radius:50%;
+  top:11px;
+  background-color:lightgrey;
+}
+.lefteye {
+  width:5px;
+  height:5px;
+  border:3px solid black;
+  border-radius:50%;
+  left:30%;
+  top:15px;
+  background:black;
+  transition-duration:.4s;
+}
+.righteye {
+  width:5px;
+  height:5px;
+  border:3px solid black;
+  border-radius:50%;
+  top:15px;
+  left:70%;
+  background:black;
+  transition-duration:.4s;
+
+  
+ }
+.smile {
+  width:20px;
+  height:5px;
+  border:3px solid black;
+  top:30px;
+  background:black;
+  border-radius:10% 10% 150px 150px;
+  transition:.4s ease-out;
+  cursor:help;
+}
+.hidearm {
+  width:15px;
+  background-color:lightgrey;
+  border:5px solid lightgrey;
+  outline:1px solid lightgrey;
+  outline-offset:-.5px;
+  position:absolute;
+  top:68px;
+  left:3px;
+  z-index:1;
+  transform:rotate(130deg); 
+}
+.hidearm2 {
+  width:15px;
+  background-color:lightgrey;
+  border:5px solid lightgrey;
+  outline:1px solid lightgrey;
+  outline-offset:-.9px;
+  position:absolute;
+  top:57px;
+  left:9px;
+  z-index:1;
+  transform:rotate(90deg);
+}
+.arm {
+  width:45px;
+  border:1px solid black;
+  transform:rotate(-130deg);
+  position:absolute;
+  left:15px;
+  top:85px;
+  animation: wave 1s infinite ease-in-out;
+  animation-play-state:paused;
+  background-color:black;
+  
+  
+}
+.headerpicture:hover .arm {
+  animation-play-state:running;
+}
+
+@keyframes wave {
+  0% {transform:rotate(-130deg);top:85px;left:15px;}
+  50% {transform:rotate(-240deg);top:57px;left:12px;width:40px;clip: rect(0px,34px,100px,0px);border-radius:50% 0 0 0;}
+  100% {transform:rotate(-130deg);top:85px;left:15px;}
+}
+.headerpicture:hover .smile {
+  top:25px;
+  width:15px;
+}
+
+.lefteye::after {
+ content:"";
+  border:3px solid lightgrey;
+  border-radius:50%;
+  background:lightgrey;
+   height:5px;
+  width:5px;
+  position:absolute;
+  left:-4px;
+  top:5px;
+  color:red;
+  transition-duration:.4s;
+}
+.headerpicture:hover .lefteye::after {
+  border-radius: 50% 50% 15% 15% ;
+   height:5px;
+  top:0px;
+}
+.headerpicture:hover .righteye {
+  border-radius: 50%  ;
+  height:1px;
+  width:8px;
+  border:1px solid black;
+}
+
+button.back {
+  padding:15px;
+  border-radius:5px;
+  border:none;
+  cursor:pointer;
+  display:block;
+  position:absolute;
+  
+}
+ 
+.back1{
+  background:lightgrey;
+   top:125px;
+   left:10px;
+}
+.back2{
+   background:grey;
+  left:10px;
+   top:160px;
+   
+}
+
+/* end of header left */
+/* begin header right content */
+.headerpictureright {
+  float:left;
+   width:75%;
+   height:202px;
+  position:relative;
+ 
+  
+}
+
+
+.headertext  {
+  margin-left:50px;}
+ 
+ 
+@media only screen and (max-width: 750px) {
+  .headerpictureright {
+    text-align:center;
+    margin-top:5%;
+    font-size:100%;
+   
+  }
+  .headertext {
+    margin:0;
+    font-size:75%;
+  }
+ 
+  
+  
+}
+
+.headerpictureright::after, .headerpicture::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.email {
+  color:black;
+  text-decoration:grey underline;
+}
+.headerAddy a:link, .paddingclass:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.headerAddy a:visited, .paddingclass:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.headerAddy a:hover, .paddingclass:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+  padding:5px;
+  box-shadow:0px 0px 3px black;
+  border-radius:10px;
+  text-shadow:0px 0px 1px black; 
+}
+.headerAddy a:active, .paddingclass:active{
+  color:white;
+  background-color: black;
+  text-decoration: underline;
+   box-shadow:0px 0px 15px black;
+  cursor:wait;
+  
+   
+}
+
+.paddingclass:hover {
+  padding: 5px 0px;}
+
+/* end header content */
+/* yeah so honestly I messed up here somewhere. I couldn't figure out how to
+   get the text to be responsive with the viewport so I had to add an
+   "@media only screen and (max-width:750px)" to change the font size so the text wouldn't
+   overflow. I probably would have needed to use and @media anyways, but I know I could 
+   have made this first part a lot cleaner if I was more experienced. Anyways, I'm going
+   to approach this next part but first spend some time thinking about how the text is
+   going to respond to the viewport differences. For this project, I had just planned on
+   using a simple two column layout with floats rather than flex or grid. My idea with the
+   header above is the left would be 25% and the right is 75% widths respectively. All in
+   all, I got everything working how I wanted it to (albeit the messy code) aside from
+   the trouble with the responsive sizing. */
+
+/* body content now */
+
+
+
+.body-container {
+  border:1px solid black;
+  border-bottom:none;
+  border-top:none;
+  height:auto;
+   width:100%;
+ }
+
+.body-inner-content-left {
+  width:49%;
+   font-size:100%;
+  border:1px solid black;
+  border-left:none;
+  border-radius:0px 25px 25px 0px;
+  float:left;
+  background-image:linear-gradient(to left, rgba(155,190,200,1), white);
+  margin-bottom:30px;
+  padding-bottom:66px;
+  
+  
+}
+
+.listLeft li {
+  word-wrap:break-word;
+  font-size:100%;
+ list-style-type: circle; 
+  list-style-image: radial-gradient(white,white,black,black);
+   border-radius:15px;  
+  padding-right:40px;
+
+ }
+
+ 
+
+.body-inner-content-right {
+  float:left;
+  width:50%;
+  
+}
+
+.summaryp {
+   text-align:center;
+   padding:0px 20px;
+   line-height:1.6;
+  font-style:italic;
+  font-family:arial,sans-serif;
+}
+
+
+
+
+
+h2:not([class="firsth2"]):hover {
+  font-style:italic;
+}
+
+
+
+.employment {
+  float:right;
+  width:48%;
+  border:1px solid black;
+  border-right:none;
+  border-radius: 25px 0px 0px 25px;
+  height:auto;
+  background-image:linear-gradient(to right, rgba(155,190,200,1), white);
+
+  margin-bottom:1px;
+ 
+ 
+   
+}
+.employment h2 {
+   text-align:center;
+   text-decoration:underline;
+}
+.employment h3  {
+  border:2px solid grey;
+  border-left:none;
+  border-right:none;
+  padding-top:0px
+} 
+
+.employment ul li {
+  padding-bottom:15px;
+}
+
+.employment ::marker {
+  color:rgba(55,55,55,.8);
+}
+
+
+.certs {
+   width:50%;
+  height:auto;
+  text-align:center;
+  float:left;
+  background-color:lightgrey;  
+  box-shadow:2px 2px 10px black, 0px 0px 3px black inset ;
+  
+   
+}
+.certs p:nth-child(even) {
+  font-weight:bold;
+}
+
+.interests {
+  float:left;
+   width:50%;
+  height:auto;
+  padding-bottom:5px;
+  transition-duration:.5s;
+      box-shadow:0px 0px 120px lightblue;
+  background-image: radial-gradient(white,white,lightblue);
+  border-radius:25%;
+  margin-top:50px;
+  animation-name:pulsate;
+  animation-iteration-count:infinite;
+  animation-duration:10s;
+  animation-timing-function:ease;
+ }
+@keyframes pulsate {
+   50% {border-radius:50%;}
+}
+
+
+ 
+.interests h2 {
+  text-align:center;
+  border-top: 2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  text-decoration:underline;
+  
+
+ }
+
+.interestcontainer {
+    text-align:center;
+   height:auto;  
+   font-size:large;
+  
+   
+  
+}
+.interestcontainer p {
+  border-bottom:1px solid black; 
+  border-right:1px solid black;
+  border-left:1px solid black;
+  border-radius:25%  155px 55% 155px;
+  padding:5px;
+  max-width:20%;
+  min-width:50%;
+   margin:auto;
+  box-shadow:0px 0px 5px red;
+  overflow:auto;
+  transition-duration:.3s;
+  cursor:default;
+ }
+.interestcontainer p:hover {
+  box-shadow:0px 0px 15px red;
+  background-image:radial-gradient(white,lightblue);
+  font-family:arial;
+ }
+
+.clearfix::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.footer {
+  width:100%;
+  border:1px solid black;
+  border-top:none;
+  background-image:linear-gradient(white,lightgrey);
+    height:auto;
+   display:flex;
+  flex-direction:row;
+   position:relative;
+  box-shadow:0px 2px 5px black;
+  margin-bottom:15px;
+  justify-content:space-around;
+  align-items:center;
+  transition-duration:.4s;
+  position:sticky;
+  bottom:0;
+  
+  
+   
+  
+}
+
+
+.footer a {
+  color:lightblue;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-shadow:0px 5px 4px black, 0px 0px 4px black, 0px 10px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black;
+  border:1px solid transparent;
+  padding:10px;
+  font-size:1.2em;
+  display:block;
+   border-radius:25px;
+  transition-duration:.4s;
+
+}
+
+.footer div:hover a {
+  color:skyblue;
+   
+}
+.footer a:hover {
+ border:1px solid black;
+  
+}
+ 
+body::after {
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:-1;
+  background-image: url("https://th.bing.com/th/id/R.7aecb9ef44b40d4e8c4b98184a2f004c?rik=7d0TQPRuv9stsg&riu=http%3a%2f%2fwww.photos-public-domain.com%2fwp-content%2fuploads%2f2013%2f11%2fspiral-notebook-paper-texture.jpg&ehk=7f4%2bgjiGU8AtRHLDJYx4P4A6HYaG9BQv6ayUx8kkyC4%3d&risl=&pid=ImgRaw&r=0");
+  background-size:cover;
+  background-position:-15px -15px;
+   
+ }
+
+/* Not sure why I had to do this cheat I learned in order to get the background image to show
+through but nothing else seemed to be working correctly. Images are definitely not my strong suit.
+At first I couldn't get ANY images to work for me so that's why I made a happy stickman in
+place of an image of myself. At this point, I'm just going to leave it for now I'm basically 
+finished, just adding some final touches. */
