@@ -1,0 +1,129 @@
+.contactContainer {
+    position: relative;
+    text-align: center;
+}
+.contactBoxes {
+     display:flex !important;
+     /* align-items: center !important; */
+     justify-content: center !important;
+     flex-wrap: wrap;
+}
+.contactPaperContainer {
+    background-color: rgba(255,255,255,.4) !important;
+    width:500px;
+    height:200px;
+}
+.contactPaperContainer:hover {
+    box-shadow:0px 2px 15px rgb(80, 76, 76);
+}
+.contactPaperContainer:not(:first-child) h2 {
+    margin-bottom: -20px;
+
+}
+.contactPaperContainer:first-child h2 {
+    margin-bottom:10px;
+}
+.boxyContainer {
+    background-color: rgba(237, 206, 164, 0.735);
+}
+.envelopeA {
+    text-decoration: none;
+}
+.diversity {
+    padding:15px;
+    width: 130px;
+    cursor: pointer;
+    border:0px solid black;
+    border-radius:45%;
+     
+ }
+ .diversity:hover {
+    animation-name: slide;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: .3s;
+ }
+ @keyframes slide {
+    0% {
+        box-shadow: 0px 0px 5px inset  rgba(79, 52, 80, 0.7);
+
+    }
+    
+    100% {
+        box-shadow: 300px 0px 5px inset rgba(55, 55, 55, 0);
+
+    }
+ }
+.telly {
+    text-decoration: underline;
+    color:black;
+    /* padding:25px; */
+    padding:15px;
+    width: 130px;
+    border:0px solid black;
+    border-radius:45%;
+}
+.telly:hover {
+    animation-name: slide2;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: .3s;
+ }
+ @keyframes slide2 {
+    0% {
+        box-shadow: 0px 0px 5px inset  rgba(79, 52, 80, 0.7);
+
+    }
+    
+    100% {
+        box-shadow: -300px 0px 5px inset rgba(55, 55, 55, 0);
+
+    }
+ }
+
+.envelope {
+    border:0px solid black;
+    border-radius:45%;
+    padding:10px;
+    font-size:100px;
+    text-shadow: 0px 0px 10px black;
+}
+.envelope:hover {
+    animation-name: slide3;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: .3s;
+    text-shadow: 0px 0px 5px black, 0px 0px 15px white;
+}
+@keyframes slide3 {
+    0% {
+        box-shadow: 0px 0px 5px inset  rgba(79, 52, 80, 0.7);
+
+    }
+    
+    100% {
+        box-shadow: 0px 300px 5px inset rgba(55, 55, 55, 0);
+
+    }
+ }
+
+.paperContent {
+    height: 150px;
+    line-height: 75px;
+}
+
+.toggleLabel {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.labelShow {
+    font-size:20px;
+    font-weight:bold;
+}
+.toggleLabel:hover {
+    font-style: italic;
+}
+ 

@@ -1,0 +1,10 @@
+.resumeContainer {
+    text-align: center;
+    width:100%;
+}
+.clickToOpen {
+    padding:20px;
+}
+.iframeresume {
+    box-shadow:0px 0px 10px black;
+}

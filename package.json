@@ -1,0 +1,67 @@
+{
+  "name": "sirchristianwilliam.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3000",
+  "engines": {
+    "node": "16.x"
+  }, 
+  "homepage": "https://sirchristianwilliam.github.io/",
+   "dependencies": {
+    "@aws-sdk/client-s3": "^3.245.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/material": "^5.10.17",
+    "@mui/styled-engine-sc": "^5.10.16",
+    "@userfront/core": "^0.4.6",
+    "add-to-calendar-button": "^1.18.8",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "fuse.js": "^6.6.2",
+    "luxon": "^3.2.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.40",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
+    "nodemailer": "^6.8.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.5.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.9",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "^5.0.1",
+    "react-swipeable-views": "^0.14.0",
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "s3-bucket": "^1.0.3",
+    "styled-components": "^5.3.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "heroku-run-build-script": true,
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "node-sass": "^7.0.3"
+  }
+}

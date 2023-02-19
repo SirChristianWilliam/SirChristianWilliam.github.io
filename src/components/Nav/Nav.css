@@ -1,0 +1,24 @@
+.navContainer {
+    
+}
+
+.navBg {
+    /* background-color: #3e243e2e !important; */
+    box-shadow:0px 2px 5px black;
+}
+
+.rightConBtn a {
+    text-decoration: none ;
+
+}
+.rightConBtn {
+    padding:10px;
+    
+}
+.hideLine  {
+    text-decoration: none ;
+
+}
+.rightConBtn a:hover {
+    background-color:yellow;
+}
