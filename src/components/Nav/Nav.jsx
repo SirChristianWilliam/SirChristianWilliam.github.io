@@ -17,7 +17,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import MyDrawer from "../MyDrawer/MyDrawer";
 import { HashRouter as Router, Link } from "react-router-dom";
 
-const pages = ["Home", "Contact", "About", "Resumé", "GitHub", "LinkedIn"];
+const pages = ["Home", "Contact", "About", "Resume", "GitHub", "LinkedIn"];
 const settings = ["LinkedIn", "GitHub", "Resumé", "About", "Contact", "Home"];
 
 function Nav() {
@@ -95,7 +95,7 @@ function Nav() {
                   {pages[0]}
                 </Button>
               </Link>
-              <Link to="/Contact">
+              <Link to="/contact">
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{
@@ -108,7 +108,7 @@ function Nav() {
                   {pages[1]}
                 </Button>
               </Link>
-              <Link to="About">
+              <Link to="/about">
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{
@@ -121,7 +121,7 @@ function Nav() {
                   {pages[2]}
                 </Button>
               </Link>
-              <Link to="/Resume">
+              <Link to="/resume">
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{

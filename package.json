@@ -6,7 +6,6 @@
   "engines": {
     "node": "16.x"
   }, 
-  "homepage": "https://sirchristianwilliam.github.io/",
    "dependencies": {
     "@aws-sdk/client-s3": "^3.245.0",
     "@emotion/react": "^11.10.5",
