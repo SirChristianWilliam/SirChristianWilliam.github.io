@@ -86,7 +86,7 @@ function Movies() {
       } landingPageContainer`}
     >
       <a
-        href="#"
+        href="https://github.com/SirChristianWilliam/Movie-Sagas-App"
         target="_blank"
         className="mlh1"
       >

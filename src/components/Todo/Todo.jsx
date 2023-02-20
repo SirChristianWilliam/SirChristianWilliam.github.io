@@ -96,7 +96,7 @@ function Todo() {
       } landingPageContainer`}
     >
       <a
-        href="#"
+        href="https://github.com/SirChristianWilliam/Fullstack-to-do-app"
         target="_blank"
         className="mlh1"
       >
