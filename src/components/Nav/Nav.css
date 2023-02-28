@@ -22,7 +22,7 @@
 
 
 @media only screen and (max-width:500px) {
-    .fixrightNavBar {
+    .rightNavBar {
         display:flex !important;
         flex-wrap: wrap !important;
         flex-direction: column !important;
