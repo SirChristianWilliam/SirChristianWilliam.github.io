@@ -176,7 +176,7 @@ function Nav() {
               </Tooltip>
 
               <Menu
-                className={{rightNavBar}}
+                className="rightNavBar"
                 sx={{ mt: "45px" }}
                 id="menu-appbar"
                 anchorEl={anchorElUser}
