@@ -1,6 +1,3 @@
-.navContainer {
-    
-}
 
 .navBg {
     /* background-color: #3e243e2e !important; */
@@ -21,4 +18,12 @@
 }
 .rightConBtn a:hover {
     background-color:yellow;
+}
+
+@media screen and (max-width:500px) {
+    .fixrightNavBar {
+        display:flex !important;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+    }
 }

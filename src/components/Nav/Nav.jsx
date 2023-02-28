@@ -168,7 +168,7 @@ function Nav() {
 
             {/* Nav bar right */}
             {/*  */}
-            <Box sx={{ transform: "translateZ(0px)", flexGrow: 0 }}>
+            <Box className={{rightNavBar}} sx={{ transform: "translateZ(0px)", flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar alt="fda😆" src="./ignoredImages/mePro2.jpg" />
@@ -191,7 +191,7 @@ function Nav() {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                <MenuItem key={settings} onClick={handleCloseUserMenu}>
+                <MenuItem className={{fixrightNavBar}} key={settings} onClick={handleCloseUserMenu}>
                   <Button>
                     <Typography textAlign="center">
                       <a
