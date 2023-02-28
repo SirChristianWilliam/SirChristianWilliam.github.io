@@ -20,7 +20,8 @@
     background-color:yellow;
 }
 
-@media screen and (max-width:500px) {
+
+@media only screen and (max-width:500px) {
     .fixrightNavBar {
         display:flex !important;
         flex-wrap: wrap !important;
