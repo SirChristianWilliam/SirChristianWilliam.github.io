@@ -5,8 +5,8 @@
   "proxy": "http://localhost:3000",
   "engines": {
     "node": "16.x"
-  }, 
-   "dependencies": {
+  },
+  "dependencies": {
     "@aws-sdk/client-s3": "^3.245.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -60,6 +60,7 @@
   ],
   "heroku-run-build-script": true,
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "gh-pages": "^5.0.0",
     "node-sass": "^7.0.3"
   }
