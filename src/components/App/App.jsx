@@ -4,20 +4,20 @@ import { HashRouter as Router, Route } from "react-router-dom";
 // import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import "../scss/styles.scss";
 
-import AboutPage from "./AboutPage/AboutPage";
-import Contact from "./Contact/Contact";
-import Footer from "./Footer/Footer";
-import HomePage from "./HomePage/HomePage";
-import JQueryCalcPage from "./JqueryCalcPage/JqueryCalcPage";
-import Landing from "./Landing/Landing";
-import LinkedIn from "./LinkedIn/LinkedIn";
-import MissingLink from "./MissingLink/MissingLink";
-import Movies from "./Movies/Movies";
-import Nav from "./Nav/Nav";
-import QueerspaceCollective from "./QueerspaceCollective/QueerspaceCollective";
-import Resume from "./Resume/Resume";
-import Surveys from "./Surveys/Surveys";
-import Todo from "./Todo/Todo";
+import AboutPage from "../AboutPage/AboutPage";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
+import HomePage from "../HomePage/HomePage";
+import JQueryCalcPage from "../JqueryCalcPage/JqueryCalcPage";
+import Landing from "../Landing/Landing";
+import LinkedIn from "../LinkedIn/LinkedIn";
+import MissingLink from "../MissingLink/MissingLink";
+import Movies from "../Movies/Movies";
+import Nav from "../Nav/Nav";
+import QueerspaceCollective from "../QueerspaceCollective/QueerspaceCollective";
+import Resume from "../Resume/Resume";
+import Surveys from "../Surveys/Surveys";
+import Todo from "../Todo/Todo";
 import "./App.css";
 function App() {
 	return (
