@@ -3,7 +3,6 @@ import { HashRouter as Router, Route } from "react-router-dom";
 
 // import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import "../scss/styles.scss";
-
 import AboutPage from "../AboutPage/AboutPage";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
